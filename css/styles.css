@@ -13,7 +13,6 @@ body {
 }
 
 .pageTitle {
-    
     font-size: 56px;
     font-weight: 700;
     color: #75B79E;
@@ -27,8 +26,8 @@ body {
     font-size: 30px;
     font-weight: 700;
     position: absolute;
-    top: 30px;
-    right: 30px;
+    top: 15px;
+    right: 15px;
 }
 
 #board {

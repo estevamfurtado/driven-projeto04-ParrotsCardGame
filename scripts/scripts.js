@@ -97,8 +97,8 @@ function askInput () {
 
     let playerInput = 0;
     playerInput = parseInt(prompt("Quantas cartas você deseja? (números pares de 4 a 14)"))
-    
-    if (playerInput < 4 || playerInput > 14 || playerInput%2 > 0) {
+
+    if (playerInput < 4 || playerInput > 14 || playerInput%2 > 0 || playerInput != playerInput) {
         playerInput = askInput();
     }
 
@@ -186,8 +186,8 @@ function selectCard (card, cardID) {
                     endGame();
 
                     setTimeout (function() {
-                        let playAgain = prompt(`You won in ${totalTime} seconds with ${numOfTries} tries! Do you wanna play again? (Y / N)`);
-                        if (playAgain === "Y") {
+                        let playAgain = prompt(`You won in ${totalTime} seconds with ${numOfTries} tries! Press Y to play again`);
+                        if (playAgain === "Y" || playAgain === "y") {
                             createNewGame();
                         }
                     }, 1000); // wait 1 second
