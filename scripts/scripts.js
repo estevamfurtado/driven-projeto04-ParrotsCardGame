@@ -186,7 +186,7 @@ function selectCard (card, cardID) {
                     endGame();
 
                     setTimeout (function() {
-                        let playAgain = prompt(`You won in ${totalTime} seconds with ${numOfTries} tries! Press Y to play again`);
+                        let playAgain = prompt(`You won in ${totalTime}s with ${numOfTries} tries! Hit 'Y' to play again.`);
                         if (playAgain === "Y" || playAgain === "y") {
                             createNewGame();
                         }
